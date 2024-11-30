@@ -1,0 +1,8 @@
+# Compile to assembly (.s file)
+riscv64-linux-gnu-gcc -S -o boot.s boot.c
+# Compile  assembly (.o file)
+riscv64-linux-gnu-as -march=rv64i -mabi=lp64 -o boot.o -c boot.s
+# Link it up
+riscv64-linux-gnu-ld -T linker.ld --no-dynamic-linker -m elf64lriscv -static -nostdlib -s -o boot boot.o
+# Run qemu
+qemu-system-riscv64 -machine virt -bios boot

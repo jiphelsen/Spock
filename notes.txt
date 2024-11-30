@@ -1,0 +1,14 @@
+kijk uit met pointer voor response
+iets heel baremetal met features
+usability vs hardware trade off 
+huidige prototype hardcoded kan extenden => paper a tale of two worlds
+zero_mem in data_buffer
+geen en wel een data sectie onderschijden
+citeer dqlev yqio
+
+add crypto in SM for enclaves
+HMAC can ook met SHA
+
+hacl_HMAC_SHA2_256.c
+mss weg
+sha512

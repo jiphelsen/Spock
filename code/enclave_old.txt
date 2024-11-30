@@ -1,0 +1,11 @@
+#include "lib.h"
+
+
+int __attribute__((section(".enclave"))) enclave(int* test) {
+    
+    print("Hello, UART this is the first enclave!\n\r");
+    
+    print_int(*test);
+    
+    return 0;
+}
