@@ -1,3 +1,0 @@
-/home/jip/Projects/honours/Spock/tryout/hacl-star-test/test/build/CMakeFiles/example.dir
-/home/jip/Projects/honours/Spock/tryout/hacl-star-test/test/build/CMakeFiles/edit_cache.dir
-/home/jip/Projects/honours/Spock/tryout/hacl-star-test/test/build/CMakeFiles/rebuild_cache.dir

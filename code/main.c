@@ -52,9 +52,7 @@ void UNTRUSTED_SECTION main(){
 
     void* data_addr1 = (void*)&enclave1_data;
 
-    // for now attest will always return 0x4242
     int MAC_correct = 0x4242;
-    // this will fail because attest is hard coded to 0x4242
     int MAC_false = 454;
     int enclave_id1 = u_enclave_init_f(enclave1,(void *)( BUFFERS_START + 0x10), 0x1000,(void *)( BUFFERS_START + 0x2000),0x20 ,1);
     int nb1 = 2;
