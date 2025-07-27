@@ -1,0 +1,7 @@
+make clean
+make
+sudo esptool.py --chip esp32c3 --port /dev/ttyUSB0 \
+  --baud 460800 \
+  write_flash --flash_size 4MB 0x10000 esptest.bin
+
+sudo esptool.py --chip esp32c3 --port /dev/ttyUSB0 run
